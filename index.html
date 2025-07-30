@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty by Sofia - Professional Beauty Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Beauty by Sofia</div>
+                
+                <nav class="nav">
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <a href="tel:+15551234567" class="btn btn-booking" style="display: none;">
+                    📞 Book Now
+                </a>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+            
+            <div id="mobile-menu" class="mobile-menu">
+                <nav>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="tel:+15551234567" class="btn btn-booking">📞 Book Now</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    Beauty That 
+                    <span class="gradient-text">Inspires Confidence</span>
+                </h1>
+                
+                <p>
+                    Professional manicures, stunning haircuts, and personalized beauty services 
+                    that bring out your natural radiance
+                </p>
+                
+                <div class="reviews">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <span style="color: white; font-weight: 500;">5.0 • 200+ Happy Clients</span>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="tel:+15551234567" class="btn btn-booking">
+                        📅 Book Appointment
+                    </a>
+                    <a href="tel:+15551234567" class="btn btn-soft">
+                        📞 Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="floating-elements floating-1"></div>
+        <div class="floating-elements floating-2"></div>
+        <div class="floating-elements floating-3"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section gradient-soft">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Beauty Services</h2>
+                <p>Discover our range of professional beauty services designed to enhance your natural beauty</p>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"/>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">Professional Manicures</h3>
+                    <p style="color: var(--muted-foreground); margin-bottom: 1rem; font-size: 0.875rem;">From classic to gel manicures, nail art, and cuticle care for beautiful, healthy nails</p>
+                    <div style="color: var(--rose-gold); font-weight: 600; font-size: 1.125rem;">Starting at $35</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">Precision Haircuts</h3>
+                    <p style="color: var(--muted-foreground); margin-bottom: 1rem; font-size: 0.875rem;">Expert cuts, styling, and treatments tailored to your face shape and lifestyle</p>
+                    <div style="color: var(--rose-gold); font-weight: 600; font-size: 1.125rem;">Starting at $65</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">Pedicures & Foot Care</h3>
+                    <p style="color: var(--muted-foreground); margin-bottom: 1rem; font-size: 0.875rem;">Relaxing pedicures with premium products for soft, beautiful feet</p>
+                    <div style="color: var(--rose-gold); font-weight: 600; font-size: 1.125rem;">Starting at $45</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3V1m10 20a4 4 0 004-4V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4zM17 3V1"/>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">Hair Coloring</h3>
+                    <p style="color: var(--muted-foreground); margin-bottom: 1rem; font-size: 0.875rem;">Professional coloring, highlights, and color correction services</p>
+                    <div style="color: var(--rose-gold); font-weight: 600; font-size: 1.125rem;">Starting at $120</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Meet Your Beauty Expert</h2>
+                    
+                    <p style="font-size: 1.125rem; color: var(--muted-foreground); margin-bottom: 1.5rem;">
+                        Hi, I'm Sofia! With over 5 years of experience in the beauty industry, 
+                        I'm passionate about helping you look and feel your absolute best. 
+                        Every service is personalized to enhance your unique beauty.
+                    </p>
+                    
+                    <p style="color: var(--muted-foreground); margin-bottom: 2rem;">
+                        From precision haircuts that complement your face shape to stunning nail art 
+                        that expresses your personality, I believe beauty should be both luxurious 
+                        and accessible. My goal is to create a relaxing, welcoming environment where 
+                        you can unwind and leave feeling confident and radiant.
+                    </p>
+                    
+                    <a href="#contact" class="btn btn-elegant">Learn More About Me</a>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div style="width: 3rem; height: 3rem; background: var(--rose-gold-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            👥
+                        </div>
+                        <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">200+</div>
+                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Happy Clients</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div style="width: 3rem; height: 3rem; background: var(--rose-gold-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            🏆
+                        </div>
+                        <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">5+</div>
+                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Years Experience</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div style="width: 3rem; height: 3rem; background: var(--rose-gold-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            ⏰
+                        </div>
+                        <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">1000+</div>
+                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Services Completed</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div style="width: 3rem; height: 3rem; background: var(--rose-gold-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            📍
+                        </div>
+                        <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">1</div>
+                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Prime Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section gradient-soft">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Ready to book your appointment? I'd love to hear from you and help you achieve your beauty goals</p>
+            </div>
+            
+            <div class="grid grid-4" style="margin-bottom: 3rem;">
+                <div class="card">
+                    <div class="card-icon">
+                        📞
+                    </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Call or Text</h3>
+                    <p style="color: var(--muted-foreground); font-size: 0.875rem;">+1 (555) 123-4567</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        📧
+                    </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Email</h3>
+                    <p style="color: var(--muted-foreground); font-size: 0.875rem;">hello@beautybysofia.com</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        📍
+                    </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Location</h3>
+                    <p style="color: var(--muted-foreground); font-size: 0.875rem;">123 Beauty Street, Downtown</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        ⏰
+                    </div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Hours</h3>
+                    <p style="color: var(--muted-foreground); font-size: 0.875rem;">Tue-Sat: 9AM-7PM</p>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Ready to Book Your Appointment?</h3>
+                <p style="color: var(--muted-foreground); margin-bottom: 1.5rem;">Call me directly or send a message to schedule your beauty session</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                    <a href="tel:+15551234567" class="btn btn-booking">📞 Call to Book</a>
+                    <a href="mailto:hello@beautybysofia.com" class="btn btn-soft">📧 Send Message</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">📘</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

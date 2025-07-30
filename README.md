@@ -1,6 +1,6 @@
-# 💅 Landing Page de Demostración para Salón de Belleza
+# 💅 Landing Page para Salón de Belleza
 
-¡Hola! Este repositorio alberga el código de una **landing page moderna y elegante** creada como demostración para cualquier salón de belleza, estética o estilista. Es un punto de partida ideal para exhibir servicios, galerías de trabajos, testimonios y toda la información de contacto de forma atractiva y funcional.
+**landing page moderna y elegante** para cualquier salón de belleza, estética o estilista. Es un punto de partida ideal para exhibir servicios, galerías de trabajos, testimonios y toda la información de contacto de forma atractiva y funcional.
 
 ---
 
